@@ -44,7 +44,7 @@ ggplot(veggy, aes(x = Cult, y = VitC)) +
   theme(plot.title = element_text(hjust = 0.5, size = 14))
 ```
 
-The Box plot can provide a visual representation of the 2 methods. The c52 is completely displaced from c39. I think we will find a statistical difference with the two method
+The Box plot can provide a visual representation of the 2 methods. The c52 is completely displaced from c39. The box plot show no overlapping of the boxes from c39 and c52. C52 is much higher in the hart than c39. I think we will find a statistical difference with the two method. 
 
 
 ### Numerical Descriptive Results
@@ -52,11 +52,17 @@ The Box plot can provide a visual representation of the 2 methods. The c52 is co
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 
+```{r}
+favstats(VitC~Cult,data=veggy)
+```
+
 
 
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+
+The average amount of vitamin C39 is 51 and the average amount of vitamin c52 is 64.5. This tells me via the numerical data that vitamin c52 yield a higher response. This confirms the visual hypothesis of the vitamin results in the box plot. 
 
 
 # Discussion and Conclusion
