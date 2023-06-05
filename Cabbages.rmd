@@ -56,15 +56,22 @@ The Box plot can provide a visual representation of the 2 methods. The c52 is co
 favstats(VitC~Cult,data=veggy)
 ```
 
+The average amount of vitamin C39 is 51 and the average amount of vitamin c52 is 64.5. This tells me via the numerical data that vitamin c52 yield a higher response. This confirms the visual hypothesis of the vitamin results in the box plot. 
 
 
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-The average amount of vitamin C39 is 51 and the average amount of vitamin c52 is 64.5. This tells me via the numerical data that vitamin c52 yield a higher response. This confirms the visual hypothesis of the vitamin results in the box plot. 
+```{r}
+t.test(VitC~Cult,data=veggy)
+```
+The probability of getting a result as I obtain is .00000003405. Comparing c39 and c52 which is extremely small. This confirms that there is a big difference between the two vitamins. 
 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+With cross analyses between the box plot, numerical data and inferential results I can conclude that vitamin c39 yields a significantly lower result than vitamin c52. 
+
